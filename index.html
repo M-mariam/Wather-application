@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body data-bs-theme="dark">
+    <!-- Navbar -->
+    <section class="nav-section">
+        <nav class="navbar navbar-expand-lg bg-nav mt-2 scroll-nav text-white bg-dark" id="nav">
+            <div class="container">
+                <div class="row ">
+              <div class="col-2 my-auto">
+                <img src="https://routeweather.netlify.app/images/logo.png" alt="Weather">
+              </div>
+              <div class="col-2 ms-4">
+                <a class=" navbar-brand p-0" href="#">Weather
+                </a>
+                <a class=" navbar-brand p-0 tagline" href="#"><span> taglines goes here</span>
+                </a>
+              </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home" data-scroll-nav="0">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-scroll-nav="1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#live">Live</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#photos">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- hero -->
+    <section class="hero">
+        <div class="container">
+            <form class=" position-relative my-5">
+                <input id="search" type="text" placeholder="Find Your Location">
+                <input type="button" value="Find" id="find">
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div id="rowData" class="row g-3">
+                <div class="col-md-4 current-day shadow-lg">
+                    <div class="forcatst-header d-flex justify-content-between">
+                        <div class="day">Thusrsday</div>
+                        <div class="date">20 june</div>
+                    </div>
+                    <div class="region">
+                    </div>
+                    <div class="forcast-degree d-flex">
+                        <div class="today_degree my-auto fw-bolder">
+                            <h1>35<sup>o</sup>C</h1>
+                        </div>
+                      <img class="today_icon" src="" alt="Weather Icon">
+
+                    </div>
+                    <span id="condition">Clear</span>
+                    <div class="weather-icons">
+                        <span>
+                            <img src="https://routeweather.netlify.app/images/icon-umberella.png" alt="">
+                            <span id="humidty"></span>
+                        </span>
+                        <span>
+                            <img src="https://routeweather.netlify.app/images/icon-wind.png" alt="">
+                            <span id="wind"></span>
+                        </span>
+                        <span>
+                            <img src="https://routeweather.netlify.app/images/icon-compass.png" alt="">
+                            <span id="compass"></span>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="col-md-4 shadow-lg">
+                    <div class="forcatst-header text-center ">
+                        <div class="nextday">Friday</div>
+                    </div>
+                    <div class="forcast-content">
+                        <div class=" m-auto">
+                            <img class="nextday_icon" src="" alt="Weather Icon">
+                        </div>
+                        <div class="nextday_degree fw-bolder">
+                            <h1>35</h1>
+                        </div>
+                        <span id="nextday_condition">Sunny</span>
+                    </div>
+                </div>
+                <div class="col-md-4 shadow-lg">
+                    <div class="forcatst-header text-center ">
+                        <div class="nextday">Friday</div>
+                    </div>
+                    <div class="forcast-content">
+                        <div class=" m-auto">
+                            <img class="nextday_icon" src="" alt="Weather Icon">
+                        </div>
+                        <div class=" nextday_degree fw-bolder">
+                            <h1>35<sup>o</sup>C</h1>
+                        </div>
+                        <span id="nextday_condition">windy</span>
+                    </div>
+                </div>
+                </div>
+               
+            </div>
+         
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
